@@ -43,8 +43,8 @@ def getBlockStr(blockName, blockFiles):
 # main script
 # #############################################################################
 
-htmlFiles  = Path(inputDirectory).glob('*.html')
-blockFiles = Path(inputDirectory).glob('*' + BlockFileExt)
+htmlFiles  = list(Path(inputDirectory).glob('*.html'))
+blockFiles = list(Path(inputDirectory).glob('*' + BlockFileExt))
 
 for htmlFile in htmlFiles:
 
